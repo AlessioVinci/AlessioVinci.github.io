@@ -1,18 +1,11 @@
+import logo from './assets/logo.svg';
 
 function Header() {
 
-    return(
-        <header>
-            <h1>My portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <hr></hr>
+    return (
+        <header className='nav nav-scroll'>
+                <img className='nav-logo' src={logo} />
+                <span className='nav-menu'> Menu </span>
         </header>
     );
 }
